@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1673571965">
+    <data-source source="LOCAL" name="PostgreSQL - rankdb@localhost" uuid="f7227312-8b58-42b6-a14c-f23e35d75427">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/rankdb</jdbc-url>
+    </data-source>
+  </component>
+</project>

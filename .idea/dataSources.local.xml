@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - rankdb@localhost" uuid="f7227312-8b58-42b6-a14c-f23e35d75427">
+      <secret-storage>master_key</secret-storage>
+      <user-name>canvas1</user-name>
+      <schema-pattern>rankdb.pg_catalog rankdb.public</schema-pattern>
+      <default-schemas>rankdb.public</default-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rankdb
+  host: localhost
+  pool: 5
+  username: canvas1
+  password: canvas
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: signup
+  host: localhost
+  pool: 5
+  username: canvas1
+  password: canvas
