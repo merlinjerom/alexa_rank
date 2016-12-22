@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alexa Rank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Alexa Rank</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class=""><%= link_to "Home", static_dynamic_home_path %></li>
+      <li class="active"><%= link_to "Domain", domains_path %></li>
+      <li class=""><%= link_to "Admin", rails_admin_path %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" ><br>
+      <% if !user_signed_in? %>
+        <li style="color:white"><span class=" glyphicon glyphicon-user"> <%= link_to "SignUp", new_user_registration_path %> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li style="color:white"><span class="glyphicon glyphicon-log-in"> <%= link_to "Login", new_user_session_path %></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <%else%>
+        <li style="color:white;margin-right: 10px;"><span class="active"> <%= link_to "Logout", destroy_user_session_path,:method => :delete %></span></li>
+      <%end%>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
+

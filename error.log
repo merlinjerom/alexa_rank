@@ -1,0 +1,38 @@
+/home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/resolver.rb:366:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'jquery-datatables-rails (~> 3.3.0)' in any of the gem sources listed in your Gemfile or available on this machine. (Bundler::GemNotFound)
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/resolver.rb:341:in `each'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/resolver.rb:341:in `verify_gemfile_dependencies_are_found!'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/resolver.rb:199:in `start'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/resolver.rb:181:in `resolve'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/definition.rb:250:in `resolve'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/definition.rb:174:in `specs'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/definition.rb:233:in `specs_for'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/definition.rb:222:in `requested_specs'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/runtime.rb:118:in `block in definition_method'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/runtime.rb:19:in `setup'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler.rb:99:in `setup'
+	from /home/jon/.rvm/gems/ruby-2.3.1/gems/bundler-1.13.6/lib/bundler/setup.rb:20:in `<top (required)>'
+	from /home/jon/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /home/jon/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+rake aborted!
+SyntaxError: /home/jon/ror_projects/new_project/app/models/domain.rb:3: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+  belongs_to :user
+              ^
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:477:in `load'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:477:in `block in load_file'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:662:in `new_constants_in'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:476:in `load_file'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:375:in `block in require_or_load'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:37:in `block in load_interlock'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/concurrency/share_lock.rb:117:in `exclusive'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies/interlock.rb:11:in `loading'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:37:in `load_interlock'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:358:in `require_or_load'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:511:in `load_missing_constant'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.0.1/lib/active_support/dependencies.rb:203:in `const_missing'
+/home/jon/ror_projects/new_project/lib/tasks/rank.rake:4:in `block (2 levels) in <top (required)>'
+/home/jon/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/jon/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/jon/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => rank:get_rank
+(See full trace by running task with --trace)

@@ -1,5 +1,5 @@
 class Domain < ApplicationRecord
-  has_many :rankings
+  has_many :rankings ,dependent: :destroy
   belongs_to :user
   validates :name, presence: true
   validate :allow_three_for_user

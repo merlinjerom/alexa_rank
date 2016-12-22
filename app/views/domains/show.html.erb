@@ -7,13 +7,13 @@
 
 <p>
   <strong>Over all ranking:</strong>
-  <%= @domain.over_all_ranking %>
+  <%= @domain.rankings.last.try(:rank) %>
 </p>
 
 <p>
   <strong>Last update:</strong>
-  <%= @domain.last_update %>
+  <%= @domain.rankings.last.try(:created_at) %>
 </p>
+<%= area_chart @domain.rankings.group_by_hour(:created_at).maximum(:rank) %>
 
-<%= link_to 'Edit', edit_domain_path(@domain) %> |
 <%= link_to 'Back', domains_path %>

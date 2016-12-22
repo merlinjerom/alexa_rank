@@ -3,16 +3,17 @@ class DomainsController < ApplicationController
   before_action :set_current_user
   before_action :set_domain, only: [:show, :edit, :update, :destroy]
 
+
   # GET /domains
   # GET /domains.json
   def index
-    @domains = Domain.all
-    # @domains = Domain.find_by_id(current_user.id)
+    @domains = Domain.where(user_id: current_user.id)
   end
 
   # GET /domains/1
   # GET /domains/1.json
   def show
+
   end
 
   # GET /domains/new
@@ -67,7 +68,6 @@ class DomainsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_domain
-
       @domain = Domain.find(params[:id])
     end
 
