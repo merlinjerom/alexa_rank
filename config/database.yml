@@ -10,7 +10,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: signup
+  database: rankdbtest
   host: localhost
   pool: 5
   username: canvas1
